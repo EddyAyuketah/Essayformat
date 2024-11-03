@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Formatter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Essay Formatter</h1>
+        <label for="format-style">Select Format Style:</label>
+        <select id="format-style">
+            <option value="apa">APA</option>
+            <option value="mla">MLA</option>
+            <option value="chicago">Chicago</option>
+        </select>
+
+        <label for="essay-input">Paste Your Essay Here:</label>
+        <textarea id="essay-input" rows="10" placeholder="Paste your essay here..."></textarea>
+
+        <button onclick="formatEssay()">Format Essay</button>
+        <button onclick="downloadFormattedEssay()">Download Formatted Essay</button>
+
+        <h2>Formatted Essay:</h2>
+        <div id="formatted-output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
